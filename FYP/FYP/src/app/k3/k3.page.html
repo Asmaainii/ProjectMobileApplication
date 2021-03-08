@@ -1,0 +1,428 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <img src="./assets/qa.png" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title></ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  </ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan1">
+        <ion-list-header>
+          <ion-label><h2>1.Negara Barat yang manakah telah melancarkan serangan tersebut?
+            <img src="assets/rajah31.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan1"> Rusia dan Perancis
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan1">Rusia dan Perancis</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Perancis dan Britain
+        </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Austria-Hungary
+           <br>dan Jerman</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Austria-Hungary 
+           <br>dan Romania</ion-label>
+          
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan2">
+        <ion-list-header>
+          <ion-label><h2>2. Mengapakah Liga Bangsa-Bangsa menemui kegagalan?</h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kegagalan perjanjian
+            <br>pelucutan senjata
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan2">Bilangan ahli yang
+            <br>sakit
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan2">Bilangan ahli yang
+            <br>sakit
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Tiada sumber kewangan
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kelemahan kepimpinan
+           </ion-label>
+          
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan3">
+        <ion-list-header>
+          <ion-label><h2>3. Berlaku krisis di Habsyah dari tahun 1935 hingga tahun 1936.
+            Mengapakah peristiwa tersebut terjadi?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Itali menyerang Habsyah
+        </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Penyatuan Habsyah
+            <br>dengan Albania oleh 
+            <br>Jerman
+          </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan3">Kegagalan Liga Bangsa-
+            <br>Bangsa menghalang
+            <br>serangan rusia
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan3">Kegagalan Liga Bangsa-
+             <br>Bangsa menghalang
+             <br> serangan rusia
+           </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Tindakan Jerman 
+            <br>melancarkan serangan
+            <br>ke atas Habsyah
+           </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan4">
+        <ion-list-header>
+          <ion-label><h2>4. Apakah matlamat utama operasi tersebut?
+            <img src="assets/rajah32.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mengukuhkan angkatan
+            <br>tentera</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menguasai negara
+            <br>Habsyah
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menewaskan Rusia
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan4">Menewaskan Poland
+            </ion-label>
+            <ion-label color="danger" [hidden]="!jawapan4">Menewaskan Poland</ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan5">
+        <ion-list-header>
+          <ion-label><h2>5. Mengapakah Jepun menjalankan dasar peluasan kuasa?
+            <img src="assets/rajah33.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan5">Membalas dendam
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan5">Membalas dendam</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mewujudkan orde
+            <br>baharu di Asia
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memulihkan ekonomi
+            <br>negara Jepun
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Membebaskan Asia
+            <br>daripada penjajahan
+            <br>Barat
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan6">
+        <ion-list-header>
+          <ion-label><h2>6.Apakah kesan daripada tindakan tersebut?
+            <img src="assets/rajah34.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Jepun menyerang Asia
+            <br> Tenggara
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan6">Jepun menguasai Laut
+            <br>China Selatan
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan6">Jepun menguasai Laut
+             <br>China Selatan
+           </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Jepun meluaskan kuasa 
+            <br>ke Machurian
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Jepun memodenkan
+            <br>angkatan tentera
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan7">
+        <ion-list-header>
+          <ion-label><h2>7. Mengapakah Jepun menggunakan propaganda "Semangat Asia"?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mewujudkan ketakutan
+            <br>rakyat
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mendapatkan simpati
+            <br>rakyat tempatan
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan7">Menanamkan Semangat
+            <br>antipenjajahan Barat
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan7">Menanamkan Semangat
+             <br>antipenjajahan Barat
+           </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memberikan keyakinan
+            <br>terhadap kekuatan kuasa
+            <br>Jepun
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan8" >
+        <ion-list-header>
+          <ion-label><h2>8.Negara manakah yang menyokong Austria untuk menyerang Serbia dalam Perang Dunia Pertama? 
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Rusia
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Perancis
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Jerman
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan8">Amerika Syarikat
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan8">Amerika Sayarikat</ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan9">
+        <ion-list-header>
+          <ion-label><h2>9. Apakah kepentingan Dasar Orde Baharu terhadap kuasa Jepun ?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan9">Menguasai Asia 
+            <br>Pasifik
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan9">Menguasai Asia 
+            <br>Pasifik</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menamatkan konflik 
+            <br>dunia
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menamatkan sistem 
+            <br>beraja
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mencapai kemajuan 
+            <br>teknologi
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan10">
+        <ion-list-header>
+          <ion-label><h2>10.Bagaimanakah corak sistem pemerintahan Jepun di Tanah Melayu?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Sistem monarki
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan10">Sistem autokratik
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan10">Sistem autokratik</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Sistem demokrasi
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Sistem ketenteraan
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+
+  <ion-button (click)="check(soalan1,soalan2,soalan3,soalan4,soalan5,soalan6,soalan7,soalan8,soalan9,soalan10)" expand="block" fill="clear" shape="round">
+    Semakan
+  </ion-button>
+  <ion-card>
+    <ion-label>
+      <h2>Keputusan:{{total}} /10</h2>
+      </ion-label>
+  </ion-card>
+</ion-content>

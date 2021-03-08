@@ -1,0 +1,84 @@
+<ion-header [translucent]="true" color="pastel">
+  <ion-toolbar color="pastel">
+    <ion-title class="ion-text-center"> Nota Tingkatan 5</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <p class="ion-text-center" ></p>
+   
+  <ion-item color="pastel" [routerLink]="['/bab1t5']" >
+    <ion-avatar slot="start">
+      <img src="assets/warisan.jpg" />
+    </ion-avatar>
+    <ion-label>Bab 1 :
+      <h2>Kedaulatan Negara</h2>
+    </ion-label>
+  </ion-item>
+
+  <p></p>
+
+  <ion-item color="pastel" [routerLink]="['/bab2t5']" >
+    <ion-avatar slot="start">
+      <img src="assets/kebangkitan.jpg" />
+    </ion-avatar>
+    <ion-label>Bab 2 :
+      <h2>Perlembangan Persekutuan</h2>
+    </ion-label>
+  </ion-item>
+
+  <p></p>
+
+  <ion-item color="pastel" [routerLink]="['/bab3t5']" >
+    <ion-avatar slot="start">
+      <img src="assets/konflik.jpg" />
+    </ion-avatar>
+    <ion-label>Bab 3 :
+      <h2>Raja Berperlembagaan & Demokrasi Berpalimen</h2>
+    </ion-label>
+  </ion-item>
+
+  <p></p>
+
+  <ion-item color="pastel" [routerLink]="['/bab4t5']" >
+    <ion-avatar slot="start">
+      <img src="assets/era.jpg" />
+    </ion-avatar>
+    <ion-label>Bab 4 :
+      <h2>Sistem Persekutuan</h2>
+    </ion-label>
+  </ion-item>
+
+  <p></p>
+
+  <ion-item color="pastel" [routerLink]="['/bab5t5']" >
+    <ion-avatar slot="start">
+      <img src="assets/persekutuan.jpg" />
+    </ion-avatar>
+    <ion-label>Bab 5 :
+      <h2>Pembentukan Malaysia</h2>
+    </ion-label>
+  </ion-item>
+
+  <ion-tabs>
+ 
+    <ion-tab-bar slot="bottom" color="pastel" tab="note">
+      <ion-tab-button [routerLink]="['/page2']" tab="note">
+        <ion-icon name="book-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button [routerLink]="['/kuiz']"  tab="quiz">
+        <ion-icon name="medal-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button [routerLink]="['/faq2']" tab="question"  >
+        <ion-icon name="help-circle-outline"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-content>
+

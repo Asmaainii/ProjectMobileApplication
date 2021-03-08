@@ -1,0 +1,425 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <img src="./assets/kq.jpg" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title></ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card color="pastel">
+  <ion-list color="pastel">
+    <ion-radio-group [(ngModel)]="soalan1">
+      <ion-list-header>
+        <ion-label><h2>1.Apakah perbezaan ciri negara bangsa kerajaan Alam Melayu?
+          <img src="assets/rajah25.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item >
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan1">Berkembang 
+          mengikut 
+         <br>keperluan</ion-label>
+         <ion-label color="danger" [hidden]="!jawapan1">Berkembang mengikut 
+           <br>keperluan</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Kewujudan 
+          golongan 
+          <br>pembesar</ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Peranan raja 
+         dalam 
+         <br>pentadbiran</ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Kesetiaan rakyat 
+         <br> kepada raja</ion-label>
+        
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan2">
+      <ion-list-header>
+        <ion-label><h2>2. Apakah kerajaan awal Alam Melayu yang mengamalkan sistem perundangan "Kutara Manawa"</h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Kerajaan Kedah
+         Tua </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan2">Kerajaan 
+          Majapahit</ion-label>
+          <ion-label color="danger" [hidden]="!jawapan2">Kerajaan Majapahit</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Kerajaan Srivijaya
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Kerajaan Champa
+         </ion-label>
+        
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan3">
+      <ion-list-header>
+        <ion-label><h2>3. Kesultanan Melayu Melaka pernah muncul sebagai sebuah kerajaan yang gemilang.
+          Apakah rumusan anda terhadap kesultanan tersebut?
+          <img src="assets/rajah24.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Mewarisi 
+          kegemilangan
+        <br>kerajaan Kedah 
+        Tua</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Memulakan
+          penyebaran
+        <br>Islam di 
+      Alam Melayu</ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan3">Menjadi panduan
+        <br> penubuhan negara 
+        <br>bangsa masa kini
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan3">Menjadi panduan 
+           <br>penubuhan negara 
+           <br>bangsa masa kini</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Mengukuhkan 
+          <br>pembentukan negara 
+          <br>dan bangsa kerajaan
+          <br>silam
+         </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan4">
+      <ion-list-header>
+        <ion-label><h2>4. Apakah sumbangan Kesultanan Melayu Melaka kepada kita?</h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Memperkenalkan
+          <br>hukum Islam</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Mewujudkan sistem
+          <br>birokrasi awam
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Menghapuskan amalan
+          <br>Hindu-Buddha
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan4">Mengasaskan
+          <br>pembinaan negara
+          <br> bangsa
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan4">Mengasaskan pembinaan 
+            <br>negara bangsa</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan5">
+      <ion-list-header>
+        <ion-label><h2>5. Bagaimanakah Kesultanan Melayu Melaka menguasai wilayah tersebut?
+          <img src="assets/rajah26.jpg" class="ion-text-center" >
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Hadiah
+         </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Naungan
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan5">Penaklukan
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan5">Penaklukan</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Perkahwinan
+          </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan6">
+      <ion-list-header>
+        <ion-label><h2>6.Apakah peranan nakhoda mengikut Undang-Undang Laut Melaka?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Melantik
+          syahbandar
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan6">Berkuasa penuh
+          <br>dalam pelayaran
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan6"> Berkuasa penuh
+          <br>dalam pelayaran</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Berkuasa mengawal
+          <br>peraturan pelabuhan
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Menjalankan hukuman
+          <br>ke atas kesalahan
+          <br>di pelabuhan
+          
+          </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan7">
+      <ion-list-header>
+        <ion-label><h2>7.Mengutip hasil merupakan peranan pembesar Kesultanan Melayu 
+          Melaka.Bagaimanakah kutipan hasil tersebut dilakukan?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Sistem titah</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Sistem kerah
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan7">Sistem serah
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan7">Sistem serah</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Sistem paksa
+          </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan8">
+      <ion-list-header>
+        <ion-label><h2>8. Antara yang berikut, yang manakah betul tentang kandungan Undang-undang Laut Melaka?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Fasal 9- Cukai
+          <br>ke atas penumpang
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Fasal 6.3-
+          Persetujuan 
+          <br>mengadakan mesyuarat
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan8">Fasal 13.1-
+          <br>Keistimewaan
+          <br>nakhoda berdagang
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan8">Fasal 13.1-
+           <br>Keistimewaan 
+           <br>nakhoda berdagang</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Fasal 5-Hukuman
+          <br>memalsukan titah
+          sultan
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan9">
+      <ion-list-header>
+        <ion-label><h2>9. Kerajaan Srivijaya telah mewarisi asas negara bangsa di Tanah Melayu.
+          Apakah kerajaan Tanah Melayu tersebut?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Kedah
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Pahang
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan9">Melaka
+         </ion-label>
+         <ion-label color="danger" [hidden]="!jawapan9">Melaka</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Johor Riau
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+
+<ion-card>
+  <ion-list>
+    <ion-radio-group [(ngModel)]="soalan10">
+      <ion-list-header>
+        <ion-label><h2>10.Sultan Melaka telah mengurniakan kawasan kepada Pembesar Berempat.
+          Apakah gelaran kawasan tersebut ?
+        </h2></ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+        <ion-label [hidden]="jawapan10">Kawasan pegangan
+        </ion-label>
+        <ion-label color="danger" [hidden]="!jawapan10">Kawasan pegangan</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Kawasan anugerah
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Kawasan kawalan
+         </ion-label>
+        
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+        <ion-label>Kawasan jajahan
+        </ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+</ion-card>
+<ion-button (click)="check(soalan1,soalan2,soalan3,soalan4,soalan5,soalan6,soalan7,soalan8,soalan9,soalan10)" expand="block" fill="clear" shape="round">
+  Semakan
+</ion-button>
+<ion-card>
+  <ion-label>
+    <h2>Keputusan:{{total}} /10</h2>
+    </ion-label>
+</ion-card>
+</ion-content>

@@ -1,0 +1,424 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <img src="./assets/logo5.png" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title></ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan1">
+        <ion-list-header>
+          <ion-label><h2>1.Maklumat berikut berkaitan tugas sebuah jawatankuasa yang ditubuhkan pada tahun 1946.
+            Apakah jawatankuasa tersebut ?
+            <img src="assets/rajah41.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan1">Jawatankuasa kaum</ion-label>
+          <ion-label color="danger" [hidden]="!jawapan1">Jawatankuasa kaum</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Jawatankuasa kerja</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Jawatankuasa Umum</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Jawatankuasa Rakyat</ion-label>
+          
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan2">
+        <ion-list-header>
+          <ion-label><h2>2.Rajah berikut berkaitan ahli jawatankuasa kerja yang ditubuhkan oleh British pada 25 Julai 1946.
+            Apakah X ?
+            <img src="assets/rajah42.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Rakyat</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan2">Negeri</ion-label>
+          <ion-label color="danger" [hidden]="!jawapan2">Negeri</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>UMNO
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pembesar
+           </ion-label>
+          
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan3">
+        <ion-list-header>
+          <ion-label><h2>3. Mengapakah Penubuhan Jawatankuasa Kerja ditentang oleh golongan radikal Melayu dan golongan bukan Melayu?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Perkongsian kuasa 
+            <br>dilaksanakan</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Negara persekutuan 
+            <br>dibentuk</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan3">Tidak mewakili 
+            <br>semua pihak
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan3">Tidak mewakili 
+            <br>semua pihak</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kerakyatan jus 
+            <br>soli diterima
+           </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan4">
+        <ion-list-header>
+          <ion-label><h2>4. Mengapakah Dr Burhanuddin al-Helmy menentang cadangan Persekutuan Tanah Melayu 1948?</h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memberi kebebasan 
+            <br>hak bersuara</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memajukan ekonomi 
+            <br>orang Melayu
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menuntut konsep 
+            <br>sebuah demokrasi
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan4">Memohon 
+            <br>pentadbiran 
+            <br>sepenuhnya
+            </ion-label>
+            <ion-label color="danger" [hidden]="!jawapan4">Memohon 
+              <br>pentadbiran 
+              <br>sepenuhnya</ion-label>
+          </ion-item>
+        
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan5">
+        <ion-list-header>
+          <ion-label><h2>5. Apakah persamaan perjuangan antara Pertubuhan PUTERA dan Pertubuhan AMCJA?</h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan5">Perjuangan secara
+            <br>radikal
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan5">Perjuangan secara
+            <br>radikal</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pengenalan dasar
+            <br>imigran
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pemansuhan Malayan
+            <br>Union
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Penggubalan 
+            <br>Perlembagaan Rakyat
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan6">
+        <ion-list-header>
+          <ion-label><h2>6.Pernyataan berikut merujuk saranan Pertubuhan Bangsa-Bangsa Bersatu (PBB).
+            Bagaimanakah saranan tersebut dilakukan ? 
+            <img src="assets/rajah43.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Melalui wakil PBB
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan6">Melalui surat rasmi
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan6">Melalui surat rasmi
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Melalui warta 
+            <br>kerajaan
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Melalui Piagam
+            <br>Atlantik
+            </ion-label>
+
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan7">
+        <ion-list-header>
+          <ion-label><h2>7.Apakah manfaat Perjanjian Persekutuan Tanah Melayu 1948 terhadap sistem pemerintahan beraja?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Penubuhan Majlis
+          <br>Raja-Raja Melayu</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pemansuhan sistem
+            <br>pewarisan takhta
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan7">Pengenalan Sistem
+            <br>Raja Berperlembagaan
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan7">Pengenalan Sistem
+            <br>Raja Berperlembagaan</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pentadbiran diketuai
+            <br>oleh Yang di-Pertuan 
+            <br>Agong
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan8">
+        <ion-list-header>
+          <ion-label><h2>8. Mengapakah British bersetuju melakukan perubahan membubarkan Malayan Union dan menggantikannya dengan Persekutuan Tanah Melayu
+            pada 1 Februari 1948 ?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memenuhi desakan
+            <br>orang dagang
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Desakan tuntutan
+            <br>golongan radikal
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kekuatan perpaduan 
+            <br>orang Melayu
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan8">Pertambahan bilangan
+            <br>kaum imigran
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan8">Pertambahan bilangan
+            <br>kaum imigran</ion-label>
+        </ion-item>
+       
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan9">
+        <ion-list-header>
+          <ion-label><h2>9. Mengapakah Pusat Tenaga Rakyat(PUTERA) ditubuhkan?
+            <img src="assets/rajah40.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan9">Menentang British
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan9">Menentang British</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menolak pengenalan
+            <br>Malayan Union
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menyokong
+            <br>perjuangan Parti
+            <br>Komunis Malaya
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menentang penubuhan 
+            <br>Jawatankuasa Kerja
+            <br>UMNO dan British
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan10">
+        <ion-list-header>
+          <ion-label><h2>10.Antara yang beriku, negeri yang manakah terlibat dengan pemberian kerakyatan tersebut?
+            <img src="assets/rajah44.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kedah
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan10">Melaka
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan10">Melaka</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Singapura
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pulau Pinang
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+
+  <ion-button (click)="check(soalan1,soalan2,soalan3,soalan4,soalan5,soalan6,soalan7,soalan8,soalan9,soalan10)" expand="block" fill="clear" shape="round">
+    Semakan
+  </ion-button>
+  <ion-card>
+    <ion-label>
+      <h2>Keputusan:{{total}} /10</h2>
+      </ion-label>
+  </ion-card>
+</ion-content>

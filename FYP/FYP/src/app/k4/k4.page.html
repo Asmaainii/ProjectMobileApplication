@@ -1,0 +1,451 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <img src="./assets/logo4.png" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title></ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan1">
+        <ion-list-header>
+          <ion-label><h2>1.Demonstrasi damai oleh penduduk Tanah Melayu pada tahun 1946.
+            Apakah yang mendorong mereka melakukan tindakan tersebut?</h2></ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan1">Mendokong penubuhan  
+           <br>Melayu Raya</ion-label>
+           <ion-label color="danger" [hidden]="!jawapan1">Mendokong penubuhan  
+            <br>Melayu Raya</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Membantah kemasukan 
+            <br>imigran </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menuntut hak sama 
+            <br>rata</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menolak Malayan 
+            <br>Union</ion-label>
+          
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan2">
+        <ion-list-header>
+          <ion-label><h2>2. Apakah sumbangan Tun Onn Jaafar semasa penubuhan Malayan Union.
+            <img src="assets/rajah35.1.PNG" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>i dan ii</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan2"l>ii dan iii</ion-label>
+            <ion-label color="danger" [hidden]="!jawapan2">ii dan iii</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>i dan iv
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>iii dan iv
+           </ion-label>
+          
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan3">
+        <ion-list-header>
+          <ion-label><h2>3. Orang Melayu Sarawak mengadakan demonstrasi 1949.
+            Mengapakah orang Melayu Sarawak mengadakan demonstrasi tersebut? 
+            <img src="assets/rajah36.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pembentukan kerajaan 
+            <br>sendiri</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pergerakan politik 
+            <br>semakin radikal</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan3">Penyerahan Sarawak 
+            <br>kepada British
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan3">Penyerahan Sarawak 
+            <br>kepada British</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Penentangan terhadap 
+            <br>sistem Residen
+           </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan4" >
+        <ion-list-header>
+          <ion-label><h2>4. "Seramai 409 orang kakitangan awam kerajaan Sarawak telah meletak jawatan pada 2 April 1947 sebagai tanda bantahan.
+            Apakah punca berlaku peristiwa tersebut ?
+            
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Surat Pekeliling 
+            <br>No/9</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kenderaan ekonomi
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kadar gaji yang 
+            <br>rendah
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan4">Kod etika 
+            <br>perkhidmatan
+            </ion-label>
+            <ion-label color="danger" [hidden]="!jawapan4">Kod etika 
+              <br>perkhidmatan</ion-label>
+          </ion-item>
+       
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan5">
+        <ion-list-header>
+          <ion-label><h2>5. Dialog berikut berkaitan penentangan masyarakat tempatan terhadap kerajaan British di Sarawak.
+            Apakah maksud perbualan tersebut ?
+            <img src="assets/rajah37.PNG" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan5">Bantahan sistem 
+            <br>cukai
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan5">Bantahan sistem 
+            <br>cukai</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Berunding dengan 
+            <br>British</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pembukaan kampung 
+            <br>baru
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Penubuhan Rukun 
+            <br>Tiga Belas
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan6">
+        <ion-list-header>
+          <ion-label><h2>6.British khuatir pemimpin persatuan di Sabah menentang penyerahan Sabah terhadap British.
+            Bagaimanakah tindakan British mengatasinya?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memberi pencen 
+            <br>bulanan
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan6">Menghantar ke luar 
+            <br>negara
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan6">Menghantar ke luar 
+            <br>negara</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menawarkan kenaikan 
+            <br>pangkat
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menjatuhkan hukuman 
+            <br>gantung
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan7">
+        <ion-list-header>
+          <ion-label><h2>7.Kongres Melayu telah diadakan pada 1 Mac 1946 di Bangunan Kelab Sultan Sulaiman,
+            Kampung Baru,Kuala Lumpur.Apakah kesan Kongres Melayu tersebut?
+            <img src="assets/rajah38.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Penubuhan UMNO</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pilihan raya 
+            <br> pertama
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan7">Pengenalan 
+            <br>Persekutuan Tanah
+            <br>Melayu
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan7">Pengenalan 
+            <br>Persekutuan Tanah
+            <br>Melayu</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pembubaran
+            <br>Pentadbiran Tentera
+            <br>British
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan8">
+        <ion-list-header>
+          <ion-label><h2>8. Apakah kesan daripada pelantikan tokoh H.C Willian tersebut?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memulakan
+            <br>penubuhan 
+            <br>Suruhanjaya
+            <br>Perlembagaan
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memudahkan
+            <br>pelaksanaan
+            <br>pentadbiran Malayan
+            <br>Union
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Merintis jalan ke
+            <br>arah penubuhan Majlis
+            <br> Raja-raja Melayu
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan8">Memisahkan Singapura
+            <br> daripada pentadbiran
+            <br>Persekutuan Tanah
+            <br>Melayu
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan8">Memisahkan Singapura
+            <br> daripada pentadbiran
+            <br>Persekutuan Tanah
+            <br>Melayu</ion-label>
+        </ion-item>
+       
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan9">
+        <ion-list-header>
+          <ion-label><h2>9. Apakah langkah yang diambil oleh tokoh berikut terhadap penyerahan Sarawak kepada pentadbiran Kerajaan British?
+            <img src="assets/rajah39.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menentang melalui
+            <br>perundangan
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan9" >Menolak usaha
+            <br>pemberian 
+            <br>kemerdekaan
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan9">Menolak usaha
+            <br>pemberian 
+            <br>kemerdekaan</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menggalakkan
+            <br>penubuhan parti-parti
+            <br>politik
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Meyokong usaha yang
+            <br>dilakukan oleh BMA
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan10">
+        <ion-list-header>
+          <ion-label><h2>10. Golongan muda dalam gerakan antipenyerahan telah menubuhkan Kumpulan Rukun 13 pada
+            20 Ogos 1948.Apakah matlamat utama penubuhan Rukun 13 tersebut?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan10">Menuntut
+            <br>kemerdekaan
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan10">Menuntut
+            <br>kemerdekaan</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menghalau keluar
+            <br>SBUB
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menyertai gagasan 
+            <br>Malaysia
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menghapuskan 
+            <br>pengawai tinggi 
+            <br>British
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-button (click)="check(soalan1,soalan2,soalan3,soalan4,soalan5,soalan6,soalan7,soalan8,soalan9,soalan10)" expand="block" fill="clear" shape="round">
+    Semakan
+  </ion-button>
+  <ion-card>
+    <ion-label>
+      <h2>Keputusan:{{total}} /10</h2>
+      </ion-label>
+  </ion-card>
+</ion-content>

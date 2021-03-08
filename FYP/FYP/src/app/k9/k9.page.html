@@ -1,0 +1,426 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <img src="./assets/ju3.jpg" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title></ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan1" >
+        <ion-list-header>
+          <ion-label><h2>1.Apakah maksud persekutuan?</h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan1">Pemerintahan secara
+            <br>demokrasi
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan1">Pemerintahan secara 
+            <br>demokrasi</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Penyatuan beberapa
+            <br>buah
+            negeri
+          </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pembentukan sistem
+            <br>Jemaah
+           Menteri
+          </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pentadbiran oleh
+            <br>Yang di-Pertuan
+            Agong
+          </ion-label>
+          
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan2">
+        <ion-list-header>
+          <ion-label><h2>2. Mengapakah Majlis Mesyuarat Persekutuan 1927 ditubuhkan?</h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label> Membentuk sebuah
+            <br>Kerajaan pusat
+           Tua </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Membaiki struktur
+            <br>pentadbiran kerajaan
+          </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan2">Memperkemas tadbir
+            <br>urus Persekutuan
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan2">Memperkemas tadbir 
+             <br>urus Persekutuan</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mengukuhkan
+            <br>kedudukan orang
+            <br>Melayu
+           </ion-label>
+          
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan3">
+        <ion-list-header>
+          <ion-label><h2>3. Apakah peristiwa yang membawa kepada pengagihan kuasa peringkat persekutuan dan negeri?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Penubuhan Malayan
+            <br>Union 1946 
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pembentukan Majlis
+            <br>Sultan-Sultan 1946
+          </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pengistytiharaan tarikh
+            <br>kemerdekaan
+            1956
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan3">Perjanjian Persekutuan
+            <br>Tanah Melayu 1948
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan3">Perjanjian Persekutuan 
+             <br>Tanah Melayu 1948</ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan4">
+        <ion-list-header>
+          <ion-label><h2>4. Apakah X bagi peringkat pentadbiran kerajaan Malaysia?
+            <img src="assets/rajah17.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kerajaan Pusat</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kerajaan Wilayah
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan4">Kerajaan Tempatan
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan4">Kerajaan Tempatan</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kerajaan Bersekutu
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan5">
+        <ion-list-header>
+          <ion-label><h2>5. Apakah institusi yang berperanan menggubal undang-undang peringkat negeri?</h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Badan Perundangan
+           </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan5">Dewan Undangan 
+            <br>Negeri
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan5">Dewan Undangan 
+             <br>Negeri</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pihak Berkuasa
+            <br>Tempatan
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Majlis Perundangan
+            <br>Negara
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan6" >
+        <ion-list-header>
+          <ion-label><h2>6.Apakah peruntukan tambahan yang diberi kepada Senarai Negeri bagi Sarawak dan Sabah?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kesihatan Awam
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Hari Pelepasan
+            Negeri
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan6">Mahkamah Anak 
+            Negeri
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan6">Mahkamah Anak Negeri</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kewarnegaraan
+            
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan7">
+        <ion-list-header>
+          <ion-label><h2>7.Apakah persamaan sumbangan majlis tersebut?
+            <img src="assets/rajah18.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menyediakan
+            <br>perkhidmatan 
+            <br>pendidikan
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memajukan sektor
+            <br>perlancongan
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan7">Menyediakan
+            <br>kemudahan awam
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan7">Menyediakan 
+             <br>kemudahan awam</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memberi pinjaman
+            <br>kewangan
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan8">
+        <ion-list-header>
+          <ion-label><h2>8. Agensi manakah yang bertanggungjawab untuk pembangunan sosioekonomi di Sarawak?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>DARA
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>PERDA
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan8">SALCRA
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan8">SALCRA</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>KETENGAH
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan9">
+        <ion-list-header>
+          <ion-label><h2>9.Apakah nama baharu bagi pentadbiran Kerajaan Persekutuan terhadap pengurusan hidupan liar dan taman negara?
+            <img src="assets/rajah19.1.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>NADMA
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>MAKSAK
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan9">PUSPANITA
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan9">PUSPANITA</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>PERHILITAN
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan10">
+        <ion-list-header>
+          <ion-label><h2>10.Mengapakah Mesyuarat Khas Menteri Besar dan Ketua Menteri dilaksanakan?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan10">Membincangkan
+            <br>perlaksanaan sesuatu
+            <br>dasar
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan10">Membincangkan 
+            <br>perlaksanaan sesuatu 
+            <br>dasar</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memutuskan
+            <br>pembangunan sosio 
+            <br>ekonomi
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mengukuhkan 
+            <br>keselamatan dalam
+            <br>negara
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menjamin keselarasan
+            <br>pentadbiran negeri
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  <ion-button (click)="check(soalan1,soalan2,soalan3,soalan4,soalan5,soalan6,soalan7,soalan8,soalan9,soalan10)" expand="block" fill="clear" shape="round">
+    Semakan
+  </ion-button>
+  <ion-card>
+    <ion-label>
+      <h2>Keputusan:{{total}} /10</h2>
+      </ion-label>
+  </ion-card>
+</ion-content>

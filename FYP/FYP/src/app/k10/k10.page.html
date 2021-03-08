@@ -1,0 +1,430 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <img src="./assets/ju4.jpg" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title></ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan1">
+        <ion-list-header>
+          <ion-label><h2>1. Siapakah tokoh yang mencadangkan idea penggabungan tersebut?
+            <img src="assets/rajah20.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan1">Lord Barssey</ion-label>
+          <ion-label color="danger" [hidden]="!jawapan1">Lord Barssey</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>David Marshall</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Sir Frank
+            Swettenham
+          </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Sir Malcolm
+            MacDonald
+          </ion-label>
+          
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan2">
+        <ion-list-header>
+          <ion-label><h2>2. Apakah persamaan cadangan pengawai Barat berikut?
+            <img src="assets/rajah21.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pengenalan Melayu
+            <br>Raya
+           Tua </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pelaksanaan pilihan
+            <br>raya
+          </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Penubuhan 
+            <br>Persekutuan
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan2">Pembentukan Malaysia
+           
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan2">Pembentukan Malaysia</ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan3">
+        <ion-list-header>
+          <ion-label><h2>3. Apakah kesan penubuhan Parti Perikatan Sarawak?
+            <img src="assets/rajah22.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menamatkan
+            <br>pemerintahan Brooke 
+          <br>Tua</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Meneruskan sistem
+            <br>politik tradisional
+            <br> Alam Melayu
+        </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan3">Merealisasikan
+            <br>pembentukan Malaysia
+            
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan3">Merealisasikan pembentukan Malaysia</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menjayakan 
+            <br>pengasasan
+            <br>Persekutuan Borneo
+           </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan4">
+        <ion-list-header>
+          <ion-label><h2>4. Mengapakah Barisan Sosialis di Singapura menentang cadangan pembentukan Malaysia?</h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan4">Sebagai penjajahan
+            <br>bentuk baharu
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan4">Sebagai penjajahan 
+            <br>bentuk baharu</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Cubaan eksploitasi
+            <br>sumber ekonomi
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pakatan meluaskan 
+            <br>pengaruh politik
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Perlu berkongsi kuasa
+            <br>atau negeri
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan5">
+        <ion-list-header>
+          <ion-label><h2>5. Rakyat Brunei pada awalnya bersetuju menyertai Malaysia dengan syarat</h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memperoleh kuasa
+            <br>imigresen
+           </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menjamin peluang
+            <br>pentadbiran
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menerima bantuan
+            <br>ketenteraan
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan5">Mencapai
+            <br>kemerdekaan dahulu
+            </ion-label>
+            <ion-label color="danger" [hidden]="!jawapan5">Mencapai kemerdekaan dahulu</ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan6">
+        <ion-list-header>
+          <ion-label><h2>6. Apakah kesan daripada rundingan tersebut?
+            <img src="assets/rajah23.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan6">Pembentukan
+            <br>Suruhanjaya Cobbold
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan6">Pembentukan 
+            <br>Suruhanjaya Cobbold</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Lawatan PBB ke 
+            <br>Sarawak dan Sabah
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Referendum 
+            <br>dilaksanakan di
+            <br> Singapura
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Penubuhan
+            <br>Jawatankuasa Antara
+            <br>Kerajaan
+            
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan7">
+        <ion-list-header>
+          <ion-label><h2>7. Apakah kuasa autonomi yang diberi kepada Sarawak dan Sabah selepas pembentukan Malaysia?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pertahanan</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Hal ehwal luar
+            negara
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kebajikan sosial
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan7">Imigresen
+            </ion-label>
+            <ion-label color="danger" [hidden]="!jawapan7">Imigresen</ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan8">
+        <ion-list-header>
+          <ion-label><h2>8. Mengapakah terjadi perubahan tarikh pembentukan Malaysia?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Bantahan daripada
+            <br>rakyat Brunei
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan8">Laporan PBB tidak
+            <br>dapat disiapkan
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan8">Laporan PBB tidak 
+             <br>dapat disiapkan</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Tuntutan 20 Perkara
+            <br>ditolak kerajaan
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kabinet Menteri
+            <br>lambat bermesyuarat
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan9">
+        <ion-list-header>
+          <ion-label><h2>9. Mengapakah Indonesia melancarkan konfrontasi terhadap Malaysia?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mengagalkan gagasan
+            <br>Melayu
+            Raya
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mengurangkan 
+            <br>kuasa politik Melayu
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan9">Mengancam kedudukan
+            <br>Indonesia
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan9">Mengancam kedudukan 
+             <br>Indonesia</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menggalakkan
+            <br>  ancaman komunis
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan10">
+        <ion-list-header>
+          <ion-label><h2>10.Apakah nilai yang dapat ditunjukkan melalui pembentukan Malaysia?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kejujuran
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Ketekunan
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Keberanian
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan10">Kesepakatan
+          </ion-label>
+          <ion-label color="danger" [hidden]="!jawapan10">Kesepakatan</ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  <ion-button (click)="check(soalan1,soalan2,soalan3,soalan4,soalan5,soalan6,soalan7,soalan8,soalan9,soalan10)" expand="block" fill="clear" shape="round">
+    Semakan
+  </ion-button>
+  <ion-card>
+    <ion-label>
+      <h2>Keputusan:{{total}} /10</h2>
+      </ion-label>
+  </ion-card>
+  
+</ion-content>

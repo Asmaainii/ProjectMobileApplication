@@ -1,0 +1,432 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <img src="./assets/ju.jpg" width=" 300px" style="display:inline-block" height="100px">
+    <ion-title></ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan1">
+        <ion-list-header>
+          <ion-label><h2>1.Apakah konsep kekuasaan tertinggi sesebuah negara yang bebas?</h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kerajaan</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kesatuan</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]=jawapan1>Kedaulatan</ion-label>
+          <ion-label color="danger" [hidden]="!jawapan1">kedaulatan</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kewibawaan</ion-label>
+          
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan2">
+        <ion-list-header>
+          <ion-label><h2>2. Apakah perkataan yang merujuk kedaulatan dalam Bahasa Arab?</h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Daulat</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan2">Daulah</ion-label>
+          <ion-label color="danger" [hidden]="!jawapan2">Daulah</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Derhaka
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Dermawan
+           </ion-label>
+          
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan3" >
+        <ion-list-header>
+          
+          <ion-label><h2>3.Apakah persamaan sumabangan tokoh berikut?
+            <img src="/assets/rajah1.jpg">
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label> Penyatuan negara
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan3">Tafsiran kedaulatan</ion-label>
+          <ion-label color="danger" [hidden]="!jawapan3">Tafsiran Kedaulatan</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Pengasas realpolitik
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Kediktatoran
+            <br>pemerintah
+           </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan4">
+        <ion-list-header>
+          <ion-label><h2>4.Mengapakah badan kehakiman perlu bersifat bebas dan berwibawa?
+            <img src="assets/rajah2.jpg" class="ion-text-center" width="80%">
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Membendung
+            <br>perbalahan antara
+            <br>rakyat
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mengatasi
+            <br>sebarang
+            <br> pencerobohan luar
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan4">Memelihara
+            <br>kedaulatan
+            <br>Undang-undang
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan4">Memelihara 
+             <br>kedaulatan 
+             <br>Undang-undang</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menjamin
+            <br>keberkesanan dasar
+            <br>pentadbiran
+
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan5" >
+        <ion-list-header>
+          <ion-label><h2>5. Apakah peranan utama Yang di Pertuan Agong dalam pentadbiran negara?
+            <img src="assets/rajah3.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Ketua Kerajaan
+           </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Ketua Institusi
+            <br>Beraja
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan5">Ketua Umum 
+            <br>Negara
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan5">Ketua Umum Negara </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Ketua
+            <br>Pentadbir Negara
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan6">
+        <ion-list-header>
+          <ion-label><h2>6.Apakah peranan utama Perlimen?
+            <img src="assets/rajah4.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menentukan dasar
+            <br>kerajaan
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Memeterai
+            <br>pelbagai perjanjian
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menggubal sistem
+            <br>perundangan
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan6">Menguruskan
+            <br>pembangunan negara
+            
+            </ion-label>
+            <ion-label color="danger" [hidden]="!jawapan6">Menguruskan 
+              <br>pembangunan negara</ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan7">
+        <ion-list-header>
+          <ion-label><h2>7.Apakah kesan daripada pengagihan kuasa tersebut?
+            <img src="assets/rajah5.jpg" class="ion-text-center" >
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mengukuhkan sistem
+            <br>pertahanan
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan7">Melancarkan
+            <br>pentadbiran negara
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan7">Melancarkan 
+             <br>pentadbiran negara</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mengelakkan
+            <br>pergaduhan kaum
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menjamin
+            <br>kekayaan negeri
+            </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan8" >
+        <ion-list-header>
+          <ion-label><h2>8. Kerajaan berperanan melakukan dasar kemakmuran ekonomi negara?
+            Bagaimanakah peranan tersebut dapat dilaksanakan?
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Selepas pelantikan
+            <br>Perdana Menteri
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan8">Selepas penubuhan
+            <br>kabinet kerajaan
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan8">Selepas penubuhan 
+             <br>kabinet kerajaan</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Selepas pilihan
+            <br>raya umum dijalankan
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Selepas negara
+            <br>memperoleh 
+            <br>kemerdekaan
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan9">
+        <ion-list-header>
+          <ion-label><h2>9. Apakah kesimpulan daripada gambar tersebut?
+            <img src="assets/rajah6.jpeg" class="ion-text-center" width="90%">
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>mengadakan
+            <br>kunjungan -
+            <br>mengunjungi
+
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Menunjukkan
+            <br> keunikan negara
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan9">Mengekalkan
+            <br>perpaduan kaum
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan9">Mengekalkan 
+             <br>perpaduan kaum</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mematuhi Undang-
+            <br>undang negara
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  
+  <ion-card>
+    <ion-list>
+      <ion-radio-group [(ngModel)]="soalan10">
+        <ion-list-header>
+          <ion-label><h2>10. Mengapakah rakyat perlu menghormati lambang-lambang tersebut?
+            <img src="assets/rajah7.jpg" class="ion-text-center">
+          </h2></ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-radio value="1"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Membina sahsiah
+            <br>diri yang berdisplin
+          </ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="2"></ion-radio>&nbsp;&nbsp;
+          <ion-label [hidden]="jawapan10">Menanam perasaan
+            <br>cinta akan negara
+           </ion-label>
+           <ion-label color="danger" [hidden]="!jawapan10">Menanam perasaan
+             <br> cinta akan negara</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="3"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mempertahankan 
+            <br>kemakmuran negara
+           </ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-radio value="4"></ion-radio>&nbsp;&nbsp;
+          <ion-label>Mengekalkan
+            <br>sistem demokrasi
+            <br>berparlimen
+          </ion-label>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  <ion-button (click)="check(soalan1,soalan2,soalan3,soalan4,soalan5,soalan6,soalan7,soalan8,soalan9,soalan10)" expand="block" fill="clear" shape="round">
+    Semakan
+  </ion-button>
+  <ion-card>
+    <ion-label>
+      <h2>Keputusan:{{total}} /10</h2>
+      </ion-label>
+  </ion-card>
+  
+</ion-content>
